@@ -1,3 +1,273 @@
-body {
-    font-size: 15pt;
+*{
+    box-sizing: border-box;
+    
 }
+
+body{
+    margin: 0;
+    background-color: black;
+     font-family: orbitron, serif;
+     color:white;
+}
+
+header{
+    background-color: red;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search {
+padding: 0.5rem 1rem;
+border-radius: 50px;
+border: 2px solid #22254b;
+background-color: tra;
+font-family: monospace;
+color: black;
+font-size: 1rem;
+}
+
+.search::placeholder{
+    color: #afb2dc
+}
+
+.search:focus{
+    outline: none;
+    background-color: white;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ye baad me dekhte hai */
+
+.movie{
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    width: 300px;
+    background-color: #0d1dd2;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.movie img{
+ width: 100%;
+   
+}
+
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    color: #eee;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color: #22254b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: rgb(46, 194, 46);
+}
+.movie-info span.orange{
+ color:blueviolet;
+}
+.movie-info span.red{
+    color: red;
+
+}
+
+.overview{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 1s ease-in;
+    max-width: 100%;
+    overflow: auto;
+
+
+
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+
+}
+
+.overview h4{
+    margin-top: 0;
+}
+
+.h2{
+  font-family: serif, serif;
+     color:rgba(219, 142, 107, 1);
+  margin: 3;
+}
+
+body{
+  background-image: image('/Neon-Edge-Border-Black-Wallpaper-14-300x585.jpg');
+  background-size : cover;
+  height: 100vh;
+  background-position: center;
+}
+h4{
+  font-family: serif;
+  font-size: "20px";
+}
+
+.hello {
+    position: absolute;
+  height: auto;
+  left: 0px;
+  width: 250px;
+ }
+.highlight{
+  border: 2px solid powderblue;
+  padding: 20px;
+}
+.highlights{
+  border: 2px solid powderblue;
+  padding: 10px;
+}
+
+.highlight10{
+border: 10px solid powderblue;
+  padding: 20px;  
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.desc{
+  font-family: Raleway;
+  font-weight:400;
+  font-size:18px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1.0}
+}
+
